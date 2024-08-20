@@ -1,4 +1,5 @@
 import { useArray } from "@/hooks/useArray";
+import { useSTT } from "@/hooks/useSTT";
 import Checkbox from "expo-checkbox";
 import { useRef, useState } from "react";
 import {
@@ -69,6 +70,12 @@ export default function TodoListPage() {
   const { array: todos, append, update, remove } = useArray<Todos>([]);
   const inputRef = useRef<TextInput>(null);
 
+  const { isRecording, startRecording, stopRecording } = useSTT({
+    onSuccess: (text) => {
+      append({ id: Date.now(), todo: text, checked: false });
+    },
+  });
+
   const handleSubmit = () => {
     if (!inputValue) {
       Alert.alert("할일을 입력해주세요 !", undefined, [
@@ -120,6 +127,11 @@ export default function TodoListPage() {
             />
           )}
         />
+        {isRecording ? (
+          <Button title="녹음 종료" onPress={stopRecording} />
+        ) : (
+          <Button title="녹음 시작" onPress={startRecording} />
+        )}
       </View>
     </SafeAreaView>
   );
