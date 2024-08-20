@@ -4986,6 +4986,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-checkbox@npm:~3.0.0":
+  version: 3.0.0
+  resolution: "expo-checkbox@npm:3.0.0"
+  checksum: 10c0/15aa4a33b6d9065e4203c35a7c6918ab1314718bedcbbb2e7c2ec1429305f0b90d4382d5f3e6b108b54cbedf43c1bef6a656e1d7d5d3d3ef027cd30bd9420652
+  languageName: node
+  linkType: hard
+
 "expo-constants@npm:~16.0.0, expo-constants@npm:~16.0.2":
   version: 16.0.2
   resolution: "expo-constants@npm:16.0.2"
@@ -5093,6 +5100,15 @@ __metadata:
     react-native-reanimated:
       optional: true
   checksum: 10c0/b14b3598ed8bcfcb46d356203f5031a6ee7c4d905d951d22ffd45800329a4bbd1e833e50628f65c2c99d85b9aa94aac4625b4cdd272dc10530cc8d6ebc3ebcda
+  languageName: node
+  linkType: hard
+
+"expo-speech@npm:~12.0.2":
+  version: 12.0.2
+  resolution: "expo-speech@npm:12.0.2"
+  peerDependencies:
+    expo: "*"
+  checksum: 10c0/7276f0178d5b527a7bd0007c079f1d37c5f8fbb8c74cf8d3968acc0ca4a366791406fafe925bbe6f67628e0e8d7f53c408f2dda7aad210ba136bbfbd5a4c5caa
   languageName: node
   linkType: hard
 
@@ -9151,10 +9167,12 @@ __metadata:
     "@types/react": "npm:~18.2.45"
     "@types/react-test-renderer": "npm:^18.0.7"
     expo: "npm:~51.0.28"
+    expo-checkbox: "npm:~3.0.0"
     expo-constants: "npm:~16.0.2"
     expo-font: "npm:~12.0.9"
     expo-linking: "npm:~6.3.1"
     expo-router: "npm:~3.5.23"
+    expo-speech: "npm:~12.0.2"
     expo-splash-screen: "npm:~0.27.5"
     expo-status-bar: "npm:~1.12.1"
     expo-system-ui: "npm:~3.0.7"
